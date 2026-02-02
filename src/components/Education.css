@@ -1,0 +1,132 @@
+.education {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.education-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+  border-radius: 5px;
+}
+
+.education-card {
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: var(--primary);
+  border-radius: 50%;
+  border: 4px solid var(--darker);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+}
+
+.edu-content {
+  background: rgba(99, 102, 241, 0.03);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: 15px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.edu-content:hover {
+  background: rgba(99, 102, 241, 0.08);
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.15);
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.edu-degree {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--light);
+  margin-bottom: 0.3rem;
+}
+
+.edu-school {
+  font-size: 1rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.cgpa-badge {
+  background: var(--gradient);
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: 900;
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+  min-width: 60px;
+  text-align: center;
+}
+
+.edu-duration {
+  font-size: 0.9rem;
+  color: rgba(245, 245, 245, 0.6);
+  margin-bottom: 1rem;
+}
+
+.edu-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.highlight-badge {
+  background: rgba(167, 139, 250, 0.1);
+  color: var(--accent);
+  padding: 0.4rem 0.9rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.highlight-badge:hover {
+  background: rgba(167, 139, 250, 0.2);
+}
+
+@media (max-width: 768px) {
+  .education {
+    padding: 3rem 0;
+  }
+
+  .edu-header {
+    flex-direction: column;
+  }
+
+  .cgpa-badge {
+    align-self: flex-start;
+  }
+
+  .edu-degree {
+    font-size: 1.1rem;
+  }
+}
