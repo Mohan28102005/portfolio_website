@@ -27,6 +27,19 @@ const Projects = () => {
       ]
     },
     {
+  title: 'Credit Risk Modeling & Credit Scorecard System',
+  description: 'Production-ready credit risk application that predicts default probability and generates credit scores using a scaled logistic regression scorecard.',
+  tags: ['Logistic Regression', 'Credit Risk', 'Feature Engineering', 'Scikit-learn', 'Streamlit'],
+  github: 'https://credit-risk-modelling-1.streamlit.app/',
+  highlights: [
+    'Developed Probability of Default (PD) model using Scikit-learn',
+    'Performed feature engineering including financial ratio creation',
+    'Implemented score scaling (300–900) based on non-default probability',
+    'Designed modular preprocessing pipeline with consistent feature alignment',
+    'Deployed cloud-hosted interactive scoring application'
+  ]
+}
+    {
       title: 'InvestEase - Stock Trading Platform',
       description: 'Full-stack Zerodha-style trading platform with real-time market data',
       tags: ['React', 'Node.js', 'Socket.io', 'Chart.js', 'JWT Auth'],
