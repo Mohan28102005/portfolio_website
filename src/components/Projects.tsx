@@ -38,7 +38,7 @@ const Projects = () => {
     'Designed modular preprocessing pipeline with consistent feature alignment',
     'Deployed cloud-hosted interactive scoring application'
   ]
-}
+},
     {
       title: 'InvestEase - Stock Trading Platform',
       description: 'Full-stack Zerodha-style trading platform with real-time market data',
