@@ -59,8 +59,20 @@ const Projects = () => {
         'TinyVGG architecture for efficient classification',
         'Processed 35,000+ images with class-balanced loaders'
       ]
-    }
-  ]
+    },
+    {
+  "title": "AI Resume Helper",
+  "description": "AI-powered resume analysis and ATS scoring platform with interview assistance",
+  "tags": ["React", "Node.js", "Express", "MongoDB", "Docker", "Railway", "Vercel", "AI"],
+  "github": "https://resume-helper.dmohan.website/",
+  "highlights": [
+  "Built full-stack AI platform for resume evaluation and optimization",
+  "Integrated AI APIs for intelligent feedback and interview prep",
+  "Handled cross-origin deployment (Railway + Vercel) with secure APIs",
+  "Containerized backend using Docker for scalable deployment"
+    ]
+  }  
+]
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
