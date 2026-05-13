@@ -19,7 +19,7 @@ const Projects = () => {
       title: 'Pneumonia Detection',
       description: 'Deep learning model for chest X-ray classification with Grad-CAM interpretability',
       tags: ['PyTorch', 'CNN', 'Medical AI', 'Data Augmentation', 'Grad-CAM'],
-      github: 'https://github.com/Mohan28102005/',
+      github: 'https://pneumonia-detection-mohan.streamlit.app/',
       highlights: [
         'Built CNN with PyTorch for Normal/Pneumonia classification',
         'Processed 25,800+ X-ray images with advanced augmentation',
