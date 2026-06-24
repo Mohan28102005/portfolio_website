@@ -18,7 +18,7 @@ const Experience = () => {
     {
       role: 'Research Intern',
       company: 'Samsung PRISM',
-      period: '2023 - 2024',
+      period: 'Dec 2025 - June 2026',
       description: [
         'Developed sequence models (LSTM, RNN) as baselines for a 4-class emotion recognition system (Angry, Happy, Sad, Neutral) on speech audio, as part of an emotion-aware wake word detection pipeline.',
         'Extracted eGeMAPS (88-dimensional) acoustic features using openSMILE — including F0 statistics, shimmer, jitter, HNR, and loudness — and fused them with wav2vec2 SSL embeddings, achieving the project’s best result: Arousal 88.96%, Valence 78.71%, 4-class 78.74%.',
@@ -77,7 +77,7 @@ const Experience = () => {
                 <div className="exp-info">
                   <h3 className="exp-role">{exp.role}</h3>
                   <p className="exp-company">{exp.company}</p>
-                  <p className="exp-period">📅 {exp.period}</p>
+                  <p className="exp-period"> {exp.period}</p>
                 </div>
               </div>
 
