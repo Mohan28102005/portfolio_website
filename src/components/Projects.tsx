@@ -5,17 +5,6 @@ import './Projects.css'
 const Projects = () => {
   const projects = [
     {
-      title: 'AirBnB Clone',
-      description: 'Full-stack Airbnb-style platform with secure authentication and complete booking workflows',
-      tags: ['Node.js', 'Express', 'React', 'Cloudinary', 'MongoDB'],
-      github: 'https://github.com/Mohan28102005/AirBnb',
-      highlights: [
-        'Built full-stack platform supporting 100+ property listings',
-        'Integrated Cloudinary for scalable image storage and optimized media delivery',
-        'Implemented React frontend with advanced search filters and interactive maps'
-      ]
-    },
-    {
       title: 'Pneumonia Detection',
       description: 'Deep learning model for chest X-ray classification with Grad-CAM interpretability',
       tags: ['PyTorch', 'CNN', 'Medical AI', 'Data Augmentation', 'Grad-CAM'],
@@ -27,18 +16,41 @@ const Projects = () => {
       ]
     },
     {
-  title: 'Credit Risk Modeling & Credit Scorecard System',
-  description: 'Production-ready credit risk application that predicts default probability and generates credit scores using a scaled logistic regression scorecard.',
-  tags: ['Logistic Regression', 'Credit Risk', 'Feature Engineering', 'Scikit-learn', 'Streamlit'],
-  github: 'https://credit-risk-modelling-1.streamlit.app/',
-  highlights: [
-    'Developed Probability of Default (PD) model using Scikit-learn',
-    'Performed feature engineering including financial ratio creation',
-    'Implemented score scaling (300–900) based on non-default probability',
-    'Designed modular preprocessing pipeline with consistent feature alignment',
-    'Deployed cloud-hosted interactive scoring application'
-  ]
-},
+      title: 'Credit Risk Modeling & Credit Scorecard System',
+      description: 'Production-ready credit risk application that predicts default probability and generates credit scores using a scaled logistic regression scorecard.',
+      tags: ['Logistic Regression', 'Credit Risk', 'Feature Engineering', 'Scikit-learn', 'Streamlit'],
+      github: 'https://credit-risk-modelling-1.streamlit.app/',
+      highlights: [
+        'Developed Probability of Default (PD) model using Scikit-learn',
+        'Performed feature engineering including financial ratio creation',
+        'Implemented score scaling (300–900) based on non-default probability',
+        'Designed modular preprocessing pipeline with consistent feature alignment',
+        'Deployed cloud-hosted interactive scoring application'
+      ]
+    },
+    {
+      "title": "AI Resume Helper",
+      "description": "AI-powered resume analysis and ATS scoring platform with interview assistance",
+      "tags": ["React", "Node.js", "Express", "MongoDB", "Docker", "Railway", "Vercel", "AI"],
+      "github": "https://resume-helper.dmohan.website/",
+      "highlights": [
+        "Built full-stack AI platform for resume evaluation and optimization",
+        "Integrated AI APIs for intelligent feedback and interview prep",
+        "Handled cross-origin deployment (Railway + Vercel) with secure APIs",
+        "Containerized backend using Docker for scalable deployment"
+      ]
+    },
+    {
+      title: 'AirBnB Clone',
+      description: 'Full-stack Airbnb-style platform with secure authentication and complete booking workflows',
+      tags: ['Node.js', 'Express', 'React', 'Cloudinary', 'MongoDB'],
+      github: 'https://github.com/Mohan28102005/AirBnb',
+      highlights: [
+        'Built full-stack platform supporting 100+ property listings',
+        'Integrated Cloudinary for scalable image storage and optimized media delivery',
+        'Implemented React frontend with advanced search filters and interactive maps'
+      ]
+    },
     {
       title: 'InvestEase - Stock Trading Platform',
       description: 'Full-stack Zerodha-style trading platform with real-time market data',
@@ -59,20 +71,9 @@ const Projects = () => {
         'TinyVGG architecture for efficient classification',
         'Processed 35,000+ images with class-balanced loaders'
       ]
-    },
-    {
-  "title": "AI Resume Helper",
-  "description": "AI-powered resume analysis and ATS scoring platform with interview assistance",
-  "tags": ["React", "Node.js", "Express", "MongoDB", "Docker", "Railway", "Vercel", "AI"],
-  "github": "https://resume-helper.dmohan.website/",
-  "highlights": [
-  "Built full-stack AI platform for resume evaluation and optimization",
-  "Integrated AI APIs for intelligent feedback and interview prep",
-  "Handled cross-origin deployment (Railway + Vercel) with secure APIs",
-  "Containerized backend using Docker for scalable deployment"
-    ]
-  }  
-]
+    }
+
+  ]
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -97,13 +98,13 @@ const Projects = () => {
     <section id="projects" className="projects">
       <div className="container">
         <motion.h2
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="section-title"
         >
-          Featured <span className="gradient-text">Projects</span>
+          Featured Projects
         </motion.h2>
 
         <motion.div
@@ -118,7 +119,6 @@ const Projects = () => {
               key={index}
               className="project-card"
               variants={cardVariants}
-              whileHover={{ y: -10 }}
               onClick={() => window.open(project.github, '_blank')}
             >
               <div className="project-header">
@@ -129,8 +129,6 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="github-link"
                   onClick={(e) => e.stopPropagation()}
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.9 }}
                 >
                   ↗
                 </motion.a>
@@ -158,7 +156,6 @@ const Projects = () => {
                   <motion.span
                     key={i}
                     className="tag"
-                    whileHover={{ scale: 1.05, backgroundColor: 'rgba(99, 102, 241, 0.2)' }}
                   >
                     {tag}
                   </motion.span>

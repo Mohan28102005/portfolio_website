@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <section id="home" className="hero">
       <div className="hero-background"></div>
-      
+
       <motion.div
         className="hero-content"
         variants={containerVariants}
@@ -34,31 +34,27 @@ const Hero = () => {
         animate="visible"
       >
         <motion.div variants={itemVariants} className="hero-greeting">
-          <span className="wave">👋</span> Hi, I'm
+          Full-Stack Developer. AI/ML Engineer.
         </motion.div>
 
         <motion.h1 variants={itemVariants} className="hero-title">
-          Dokuparthi <span className="gradient-text">Mohan</span>
+          Dokuparthi Mohan
         </motion.h1>
 
-        <motion.p variants={itemVariants} className="hero-subtitle">
-          Full-Stack Developer • AI/ML Engineer • Creative Technologist
-        </motion.p>
-
         <motion.p variants={itemVariants} className="hero-description">
-          Building stunning web experiences with React, crafting intelligent systems with AI/ML, 
-          and turning ideas into reality through code
+          Building stunning web experiences with React, crafting intelligent systems with AI/ML,
+          and turning ideas into reality through code.
         </motion.p>
 
-        <motion.div 
+        <motion.div
           variants={itemVariants}
           className="hero-buttons"
         >
           <motion.a
             href="#projects"
             className="btn btn-primary"
-            whileHover={{ scale: 1.05, boxShadow: '0 10px 30px rgba(99, 102, 241, 0.4)' }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
           >
             View My Work
           </motion.a>

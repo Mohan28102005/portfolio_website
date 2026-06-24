@@ -11,22 +11,10 @@ const Achievements = () => {
       color: '#ffd700'
     },
     {
-      title: 'CGPA: 9.46',
-      description: 'B.E. in AI & Data Science',
-      icon: '🎓',
+      title: 'Top 10 Teams - PKP Hackathon',
+      description: 'Ranked in the Top 10 Teams',
+      icon: '🌟',
       color: '#6366f1'
-    },
-    {
-      title: '500+ Users',
-      description: 'Served in production applications',
-      icon: '👥',
-      color: '#a78bfa'
-    },
-    {
-      title: 'Production Deployment',
-      description: 'AI chatbot live on Hostinger',
-      icon: '🚀',
-      color: '#8b5cf6'
     }
   ]
 
@@ -53,13 +41,13 @@ const Achievements = () => {
     <section id="achievements" className="achievements">
       <div className="container">
         <motion.h2
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="section-title"
         >
-          <span className="gradient-text">Achievements</span>
+          Achievements
         </motion.h2>
 
         <motion.div
@@ -74,15 +62,11 @@ const Achievements = () => {
               key={index}
               className="achievement-card"
               variants={itemVariants}
-              whileHover={{
-                y: -10,
-                boxShadow: `0 20px 40px rgba(99, 102, 241, 0.2)`
-              }}
             >
               <motion.div
                 className="achievement-icon"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
               >
                 {achievement.icon}
               </motion.div>

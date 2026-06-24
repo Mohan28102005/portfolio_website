@@ -8,7 +8,7 @@ const Education = () => {
       degree: 'B.E. in Artificial Intelligence & Data Science',
       school: 'MS Ramaiah Institute of Technology',
       duration: 'Oct 2023 – Present',
-      cgpa: '9.46',
+      cgpa: '9.36',
       highlights: ['AI & ML Focus', 'Deep Learning', 'Data Science']
     },
     {
@@ -50,13 +50,13 @@ const Education = () => {
     <section id="education" className="education">
       <div className="container">
         <motion.h2
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="section-title"
         >
-          <span className="gradient-text">Education</span>
+          Education
         </motion.h2>
 
         <motion.div

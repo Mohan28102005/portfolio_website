@@ -9,11 +9,22 @@ const Experience = () => {
       company: 'IPageUM Services',
       period: 'Jul 2024 - Present',
       description: [
-        'Engineered an AI-powered virtual assistant for the Indian Drone Academy using Flowise and LangChain',
-        'Deployed chatbot to production on Hostinger ensuring stable performance and high availability',
-        'Optimized workflows and response pipelines, improving accuracy and system reliability'
+        'Engineered an AI-powered virtual assistant for the Indian Drone Academy, leveraging Flowise for context-aware interactions.',
+        'Deployed the chatbot to production on Hostinger, ensuring stable performance and high availability.',
+        'Optimized workflows and response pipelines, improving accuracy, data handling, and system reliability.'
       ],
-      skills: ['Flowise', 'LangChain', 'Node.js', 'Express', 'Hostinger']
+      skills: ['MERN Stack', 'Flowise', 'Hostinger', 'AI Automation']
+    },
+    {
+      role: 'Research Intern',
+      company: 'Samsung PRISM',
+      period: '2023 - 2024',
+      description: [
+        'Developed sequence models (LSTM, RNN) as baselines for a 4-class emotion recognition system (Angry, Happy, Sad, Neutral) on speech audio, as part of an emotion-aware wake word detection pipeline.',
+        'Extracted eGeMAPS (88-dimensional) acoustic features using openSMILE — including F0 statistics, shimmer, jitter, HNR, and loudness — and fused them with wav2vec2 SSL embeddings, achieving the project’s best result: Arousal 88.96%, Valence 78.71%, 4-class 78.74%.',
+        'Conducted iterative experiments across multiple model architectures and pooling strategies to improve speaker-independent emotion classification.'
+      ],
+      skills: ['LSTM', 'RNN', 'openSMILE', 'wav2vec2', 'Emotion Recognition']
     }
   ]
 
@@ -40,13 +51,13 @@ const Experience = () => {
     <section id="experience" className="experience">
       <div className="container">
         <motion.h2
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="section-title"
         >
-          Professional <span className="gradient-text">Experience</span>
+          Professional Experience
         </motion.h2>
 
         <motion.div
@@ -61,7 +72,6 @@ const Experience = () => {
               key={index}
               className="experience-card"
               variants={itemVariants}
-              whileHover={{ scale: 1.02, boxShadow: '0 20px 40px rgba(99, 102, 241, 0.2)' }}
             >
               <div className="exp-header">
                 <div className="exp-info">
@@ -91,7 +101,6 @@ const Experience = () => {
                   <motion.span
                     key={i}
                     className="skill-tag"
-                    whileHover={{ scale: 1.1, backgroundColor: 'rgba(99, 102, 241, 0.3)' }}
                   >
                     {skill}
                   </motion.span>

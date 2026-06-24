@@ -25,19 +25,19 @@ const Navbar = () => {
   ]
 
   return (
-    <motion.nav 
+    <motion.nav
       className="navbar"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
     >
       <div className="nav-container">
-        <motion.div 
+        <motion.div
           className="nav-logo"
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <span className="gradient-text">DM</span>
+          <span>Dokuparthi Mohan</span>
         </motion.div>
 
         <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
@@ -50,7 +50,6 @@ const Navbar = () => {
               variants={menuVariants}
               initial="hidden"
               animate="visible"
-              whileHover={{ color: '#6366f1' }}
             >
               {item.label}
             </motion.a>

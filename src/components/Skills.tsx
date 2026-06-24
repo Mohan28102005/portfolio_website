@@ -53,13 +53,13 @@ const Skills = () => {
     <section id="skills" className="skills">
       <div className="container">
         <motion.h2
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="section-title"
         >
-          Technical <span className="gradient-text">Skills</span>
+          Technical Skills
         </motion.h2>
 
         <motion.div
@@ -74,7 +74,6 @@ const Skills = () => {
               key={idx}
               className="skill-category"
               variants={itemVariants}
-              whileHover={{ y: -5 }}
             >
               <h3 className="category-title">{category.category}</h3>
               <div className="skills-list">
@@ -82,13 +81,7 @@ const Skills = () => {
                   <motion.div
                     key={i}
                     className="skill-item"
-                    whileHover={{
-                      scale: 1.1,
-                      boxShadow: '0 10px 25px rgba(99, 102, 241, 0.3)'
-                    }}
-                    whileTap={{ scale: 0.95 }}
                   >
-                    <span className="skill-dot"></span>
                     {skill}
                   </motion.div>
                 ))}

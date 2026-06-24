@@ -33,13 +33,13 @@ const Contact = () => {
     <section id="contact" className="contact">
       <div className="container">
         <motion.h2
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="section-title"
         >
-          Let's <span className="gradient-text">Connect</span>
+          Let's Connect
         </motion.h2>
 
         <motion.p
@@ -67,8 +67,6 @@ const Contact = () => {
               rel={link.href.startsWith('http') ? 'noopener noreferrer' : ''}
               className="contact-link"
               variants={itemVariants}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
             >
               <span className="contact-icon">{link.icon}</span>
               <div className="contact-info">
@@ -89,7 +87,6 @@ const Contact = () => {
           <motion.a
             href="mailto:1ms23ad018@msrit.edu"
             className="cta-button"
-            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             Send Me An Email
