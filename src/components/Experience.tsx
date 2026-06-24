@@ -7,7 +7,7 @@ const Experience = () => {
     {
       role: 'AI Automation Intern',
       company: 'IPageUM Services',
-      period: 'Jul 2024 - Present',
+      period: 'Sept 2025 - Dec 2025',
       description: [
         'Engineered an AI-powered virtual assistant for the Indian Drone Academy, leveraging Flowise for context-aware interactions.',
         'Deployed the chatbot to production on Hostinger, ensuring stable performance and high availability.',
